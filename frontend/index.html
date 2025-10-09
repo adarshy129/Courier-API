@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courier Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📦 Courier Management System</h1>
+
+    <!-- Add Courier Form -->
+    <form id="courierForm">
+      <input type="text" id="courierName" placeholder="Courier Name" required />
+      <input type="text" id="packageId" placeholder="Package ID" required />
+      <input type="text" id="pickupLocation" placeholder="Pickup Location" required />
+      <input type="text" id="deliveryLocation" placeholder="Delivery Location" required />
+      <select id="deliveryStatus">
+        <option value="Pending">Pending</option>
+        <option value="In Transit">In Transit</option>
+        <option value="Delivered">Delivered</option>
+      </select>
+      <input type="date" id="estimatedDelivery" required />
+      <button type="submit">Add Courier</button>
+    </form>
+
+    <!-- Courier Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Courier Name</th>
+          <th>Package ID</th>
+          <th>Pickup</th>
+          <th>Delivery</th>
+          <th>Delivery Status</th>
+          <th>Est. Delivery</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="courierTableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="browser-app.js"></script>
+</body>
+</html>
