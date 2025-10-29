@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:7000/api/v1/couriers";
+const API_URL = "https://courier-api-kyq5.onrender.com/api/v1/couriers";
 const form = document.getElementById("courierForm");
 const tableBody = document.getElementById("courierTableBody");
 
